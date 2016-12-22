@@ -1,0 +1,9 @@
+com/example/testbot/views/SymphonyTestView.class
+com/example/testbot/core/SymphonyTest.class
+com/example/testbot/utils/SymphonyAuth.class
+com/example/testbot/resources/SymphonyTestResource.class
+com/example/testbot/SymphonyTestConfiguration.class
+com/example/testbot/SymphonyTestApplication.class
+com/example/testbot/SymphonyTestApplication$2.class
+com/example/testbot/views/SymphonyTestView$Template.class
+com/example/testbot/SymphonyTestApplication$1.class
