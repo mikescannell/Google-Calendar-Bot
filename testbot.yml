@@ -29,7 +29,14 @@ server:
 #  hardNofileLimit: 1000
   applicationConnectors:
     - type: http
-      port: 8080
+      port: 6060
+    # - type: https
+    #   port: 8443
+    #   keyStorePath: /data/web/manuela/TradeAlertBot/
+#    server.keystore
+#      keyStorePassword: "changeit"
+#      validateCerts: false
+
     #this requires the alpn-boot library on the JVM's boot classpath
     #- type: h2
     #  port: 8445
@@ -39,7 +46,7 @@ server:
     #  validatePeers: false
   adminConnectors:
     - type: http
-      port: 8081
+      port: 6061
 # Logging settings.
 logging:
 
@@ -78,12 +85,16 @@ viewRendererConfiguration:
         whitespace_stripping: yes
 
 #ONLY EDIT THIS SECTION FOR SYMPHONY CONFIG
-sessionAuthURL: https://nexus.symphony.com:8444/sessionauth
-keyAuthUrl: https://nexus.symphony.com:8444/keyauth
-localKeystorePath: /Users/mike.scannell/Desktop/APIExploritoryProjects/agent-sdk/atlas/symphony/global/certs/server.truststore
+sessionAuthURL: https://preview-api.symphony.com/sessionauth
+keyAuthUrl: https://preview-api.symphony.com:443/keyauth
+localKeystorePath: /Users/manuela.caicedo/Documents/certs/server.truststore
 localKeystorePassword: changeit
-botCertPath: /Users/mike.scannell/Desktop/APIExploritoryProjects/agent-sdk/atlas/symphony/global/certs/bot.user1.p12
+botCertPath: /Users/manuela.caicedo/Documents/certs/bot.user23.p12
 botCertPassword: changeit
-botEmailAddress: bot.user1@example.com
-agentAPIEndpoint: https://nexus.symphony.com:8444/agent
-podAPIEndpoint: https://nexus.symphony.com:8444/pod
+botEmailAddress: bot.user23@example.com
+agentAPIEndpoint: https://preview.symphony.com/agent
+podAPIEndpoint: https://preview.symphony.com/pod
+userEmailAddress: kevin@symphony.com
+tokensFile: /Users/manuela.caicedo/Documents/GoogleGsuiteApp2/tokens.json
+googleAppSecretPath: /Users/manuela.caicedo/Documents/GoogleGsuiteApp2/client_secret2.json
+serviceAccount: /Users/manuela.caicedo/Documents/client-examples/Deployed-jars/GoogleGSuiteApp/GBot-a8009eddaa62.p12

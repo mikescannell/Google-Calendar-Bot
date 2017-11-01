@@ -17,6 +17,9 @@ public class SymphonyTestConfiguration extends Configuration {
     private String sessionAuthURL;
 
     @NotEmpty
+    private String tokensFile;
+
+    @NotEmpty
     private String keyAuthUrl;
     @NotEmpty
     private String localKeystorePath;
@@ -29,9 +32,26 @@ public class SymphonyTestConfiguration extends Configuration {
     @NotEmpty
     private String botEmailAddress;
     @NotEmpty
+    private String userEmailAddress;
+
+    @NotEmpty
     private String agentAPIEndpoint;
     @NotEmpty
     private String podAPIEndpoint;
+
+    @NotEmpty
+    private String googleAppSecretPath;
+
+    @NotEmpty
+    private String serviceAccount;
+
+    public String getServiceAccount() {
+        return serviceAccount;
+    }
+
+    public void setServiceAccount(String serviceAccount) {
+        this.serviceAccount = serviceAccount;
+    }
 
     @NotEmpty
     private String template;
@@ -180,4 +200,31 @@ public class SymphonyTestConfiguration extends Configuration {
         this.podAPIEndpoint = podAPIEndpoint;
     }
 
+    @JsonProperty
+    public String getUserEmailAddress() {
+        return userEmailAddress;
+    }
+
+    @JsonProperty("userEmailAddress")
+    public void setUserEmailAddress(String userEmailAddress) {
+        this.userEmailAddress = userEmailAddress;
+    }
+
+    @JsonProperty
+    public String getTokensFile() {
+        return tokensFile;
+    }
+
+    @JsonProperty("tokensFile")
+    public void setTokensFile(String tokensFile) {
+        this.tokensFile = tokensFile;
+    }
+
+    public String getGoogleAppSecretPath() {
+        return googleAppSecretPath;
+    }
+
+    public void setGoogleAppSecretPath(String googleAppSecretPath) {
+        this.googleAppSecretPath = googleAppSecretPath;
+    }
 }
