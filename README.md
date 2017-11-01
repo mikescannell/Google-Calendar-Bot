@@ -1,4 +1,4 @@
-# Introduction
+# Google Calendar Bot
 
 The Dropwizard example application was developed to, as its name implies, provide examples of some of the features
 present in Dropwizard.
